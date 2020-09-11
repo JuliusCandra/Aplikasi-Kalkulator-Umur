@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:minWidth="200dp"
+        android:id="@+id/edit_umur"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/holo_blue_bright"
+        android:textColor="@android:color/black"
+        android:hint="Masukkan umur anda"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/button_hitung"
+        android:minWidth="200dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/edit_umur"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung" />
+
+    <TextView
+        android:id="@+id/textHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button_hitung"
+        android:layout_centerInParent="true"
+        android:minWidth="200dp"
+        android:textAlignment="center" />
+
+</RelativeLayout>
